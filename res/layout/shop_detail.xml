@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/btn_back"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/shop_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_gravity="center"
+            android:layout_margin="5.0dip"
+            android:layout_weight="1.4"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_topic_default"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:lines="2"
+            android:paddingLeft="8.0dip"
+            android:textColor="@color/black"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:focusable="false"
+        android:paddingTop="5.0dip"
+        android:text="联系方式"
+        android:textColor="#ff666666"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/shop_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingTop="5.0dip"
+        android:singleLine="true"
+        android:text="地址："
+        android:textColor="@color/black"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/shop_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingTop="5.0dip"
+        android:singleLine="true"
+        android:text="电话："
+        android:textColor="@color/black"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/shop_website"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingTop="5.0dip"
+        android:singleLine="true"
+        android:text="网址："
+        android:textColor="@color/black"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:focusable="false"
+        android:paddingTop="5.0dip"
+        android:text="商家简介"
+        android:textColor="#ff666666"
+        android:textSize="15.0sp" />
+    
+    <TextView
+        android:id="@+id/shop_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingTop="5.0dip"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="13.0sp" />
+
+</LinearLayout>

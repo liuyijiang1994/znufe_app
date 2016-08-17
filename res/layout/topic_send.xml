@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发帖 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/layout_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_back_confirm" />
+
+    <!-- 显示表情图标的网格视图 -->
+
+    <GridView
+        android:id="@+id/faces_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="145.0dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:horizontalSpacing="5.0dip"
+        android:numColumns="7"
+        android:verticalSpacing="10.0dip"
+        android:visibility="gone"
+         />
+
+    <!-- 发帖工具条 -->
+
+    <include
+        android:id="@+id/layout_toolbar_send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/faces_gv"
+        android:layout_alignWithParentIfMissing="true"
+        layout="@layout/toolbar_send" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_toolbar_send"
+        android:layout_below="@id/layout_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- topic title -->
+
+            <LinearLayout
+                android:id="@+id/layout_topic_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic_send_title"
+                    android:textColor="@color/black"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/topic_title"
+                    style="@style/MyEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawSelectorOnTop="false"
+                    android:hint="@string/topic_send_title_hint"
+                    android:singleLine="true"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+            <!--下拉列表，选择所属版块 
+            <Spinner
+                android:id="@+id/spiner_topic_board"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:drawSelectorOnTop="true" />            -->
+
+            <TextView
+                android:id="@+id/board_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15.0sp" />
+
+            <!-- 文本域 -->
+
+            <EditText
+                android:id="@+id/topic_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/text_border"
+                android:gravity="top"
+                android:hint="@string/topic_send_content_hint"
+                android:lines="13"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

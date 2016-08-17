@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:id="@+id/news_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/schoolLife_Browser_Title"  />
+
+      <TextView
+          android:id="@+id/time"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="right"
+          android:textColor="@color/black"
+          android:textSize="@dimen/schoolLife_Browser_Time" />
+
+      <ImageView
+          android:id="@+id/line"
+          android:scaleType="centerCrop"
+          android:layout_width="fill_parent"
+          android:layout_height="2dip"
+          android:src="@drawable/line" />
+
+</LinearLayout>

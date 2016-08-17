@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white">
+<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_top">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#2ea3fe"/>
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#40cca9">
+
+            <Button
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/back"
+                    android:id="@+id/title_bar_menu"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="话题"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/new_message"
+                android:layout_width="38dip"
+                android:layout_height="30dip"
+                
+                android:background="@drawable/new_mes" 
+                android:layout_gravity="right|center_vertical"/>
+
+        </FrameLayout>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#ebebeb"/>
+
+    </LinearLayout>
+<com.special.ResideMenuDemo.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_down_view"
+    android:layout_below="@+id/layout_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+   >
+</com.special.ResideMenuDemo.PullDownView>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@drawable/freebg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/classback"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/classbgback" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.37"
+            android:background="@drawable/classroom"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/checkBox2"
+                android:layout_marginBottom="49dp"
+                android:layout_marginLeft="64dp"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:button="@drawable/checkbox_btn3" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                style="zoom:120%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/checkBox4"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/OK_CheckBox1_layout_marginBottom"
+                android:layout_marginLeft="@dimen/OK_CheckBox1_layout_marginLeft"
+                android:button="@drawable/checkbox_btn2" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/OK_CheckBox2_layout_marginLeft"
+                android:layout_toRightOf="@+id/checkBox4"
+                android:button="@drawable/checkbox_btn4" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/checkBox5"
+                android:layout_alignRight="@+id/checkBox2"
+                android:layout_marginBottom="@dimen/OK_CheckBox3_layout_marginBottom"
+                android:layout_marginRight="@dimen/OK_CheckBox3_layout_marginRight"
+                android:button="@drawable/checkbox_btn5" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/checkBox4"
+                android:layout_marginBottom="@dimen/OK_CheckBox5_layout_marginBottom"
+                android:layout_marginRight="@dimen/OK_CheckBox5_layout_marginRight"
+                android:button="@drawable/checkbox_btn6" />
+
+            <Button
+                android:id="@+id/enterBtn"
+                android:layout_width="@dimen/OK_width"
+                android:layout_height="@dimen/OK_height"
+                android:layout_alignBottom="@+id/checkBox3"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/checkBox1"
+                android:background="@drawable/title_btn_right3" />
+
+            <Spinner
+                android:id="@+id/spinnerXiaoqu"
+                android:layout_width="100dp"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/checkBox5"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/classsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/search" />
+    </LinearLayout>
+
+</RelativeLayout>

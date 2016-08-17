@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_top2" >
+
+	<ImageView
+	    android:id="@+id/iv_logo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/verync_logo"
+	    android:src="@drawable/verync_logo" />
+
+    <ImageButton
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/btn_refresh"
+        android:focusable="false" />
+	  <ImageButton 
+	            android:id="@+id/ibtu"
+	            android:layout_width="25dip"
+	            android:layout_height="25dip"
+	            android:background="@drawable/sort"
+	            android:layout_marginTop="8dip"
+	            android:layout_marginLeft="5dip"
+	            android:visibility="gone"
+	            android:layout_toRightOf="@id/iv_logo"
+	           />
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/btn_login"
+        android:focusable="false" />
+
+</RelativeLayout>

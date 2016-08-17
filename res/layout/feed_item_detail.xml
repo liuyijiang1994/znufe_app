@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    
+    <RelativeLayout 
+	    android:background="@drawable/shap_title_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<ImageButton
+		    android:layout_alignParentLeft="true"
+		    android:id="@+id/fil_back_btn"
+		    style="@style/img_btn_style"
+		    android:src="@drawable/btn_back" 
+			/>
+
+		<TextView
+		    android:id="@+id/fil_feed_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:text="咨询前沿"
+		    android:textColor="@color/white"
+		    android:textSize="20sp" />
+
+	</RelativeLayout>
+
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/line_color"
+  		/>
+
+	<WebView
+	    android:id="@+id/my_web_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.91" />
+
+	<LinearLayout
+	    android:background="#0c0c0c"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <ImageButton
+	        android:layout_weight="1"
+	      	android:id="@+id/fid_btn_collecte"
+	        style="@style/img_btn_style"
+	        android:alpha="0.8"
+	        android:src="@drawable/btn_favorite_empty_night"
+			/>
+	    <ImageButton
+	 	    android:id="@+id/fid_btn_share"
+	 	   	android:layout_weight="1"
+	        style="@style/img_btn_style"
+	        android:alpha="0.8"
+	        android:src="@drawable/btn_to_share_night"
+			/>
+<!-- 	     <ImageButton -->
+<!-- 	        android:id="@+id/fid_btn_more" -->
+<!-- 	        android:layout_weight="1" -->
+<!-- 	        style="@style/img_btn_style" -->
+<!-- 	        android:alpha="0.8" -->
+<!-- 	        android:src="?attr/detail_btn_more" -->
+<!-- 	        /> -->
+	</LinearLayout>
+</LinearLayout>

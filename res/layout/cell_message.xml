@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="内容"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/content"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/number"
+        android:layout_alignTop="@id/good"
+        android:layout_alignBottom="@+id/good" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/good" 
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_alignTop="@id/good"
+        android:layout_alignBottom="@+id/good" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/number" 
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/good"
+        android:layout_alignTop="@id/good"
+        android:layout_marginLeft="10px"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_toRightOf="@id/tv1"
+        android:paddingRight="15dip"
+        android:gravity="center|right"
+        android:text="作者" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/good"
+        android:layout_alignTop="@id/good"
+        android:layout_toRightOf="@id/author"
+        android:gravity="center"
+        android:text="" />
+    <!-- tv1,tv2用来占位，控制格式，无实际用途 -->
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/author"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/author"
+        android:gravity="center"
+        android:text="时间" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/good"
+        android:src="@drawable/line" />
+    
+</RelativeLayout>

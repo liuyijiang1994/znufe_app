@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页头条新闻列表的ListView的选项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/topic_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:text="@string/topic_id"
+        android:visibility="gone" />
+
+    <!-- 
+    <RelativeLayout
+        android:id="@+id/headlines_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/listview_bg_gray">
+
+        <ImageView
+            android:id="@+id/topic_img_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_big_defalut" />
+
+        <TextView
+            android:id="@+id/topic_title_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/topic_img_top"
+            android:background="@drawable/headlines_first_bg"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="3dip"
+            android:singleLine="true"
+            android:text="@string/headlines_first_title"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+ -->
+    <LinearLayout
+        android:id="@+id/linearlayout_post"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_id"
+        android:background="@drawable/list_item_topic"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="5.0dip" 
+        >
+
+        <ImageView
+            android:id="@+id/topic_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3.0dip"
+            android:layout_weight="3.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_topic_default"
+            android:visibility="visible" 
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            android:paddingLeft="8.0dip"
+            >
+
+            <TextView
+                android:id="@+id/topic_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:text="@string/topic_title"
+                android:textColor="@color/black"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/topic_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/topic_content"
+                android:textColor="@color/listview_txt_gray"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

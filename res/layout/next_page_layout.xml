@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_more_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffdedede"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <Button
+        android:id="@+id/show_more_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/btn_bg"
+        android:text="查看下20条"
+        android:textColor="#ff414141"
+        android:textSize="16.0sp"
+        android:visibility="gone" />
+
+</LinearLayout>

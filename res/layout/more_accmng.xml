@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray">
+
+    <!-- title bar -->
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title_back_confirm" />
+
+    <View style="@style/MyLabelSplit" />
+    
+    <ListView android:id="@+id/lv_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+    
+    <View style="@style/MyLabelSplit" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+    
+</LinearLayout>

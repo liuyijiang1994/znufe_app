@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="@dimen/OfflineTodayCourse_height"
+            android:background="#efbf8c" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+            <TextView
+                android:id="@+id/text1021"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:gravity="center"
+                android:text="1-2"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+            <TextView
+                android:id="@+id/text51"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:layout_weight="1.0"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="@dimen/OfflineTodayCourse_height"
+            android:background="#ea95b1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+            <TextView
+                android:id="@+id/text1022"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:gravity="center"
+                android:text="2-4"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+            <TextView
+                android:id="@+id/text52"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:layout_weight="1.0"
+                android:textColor="#ffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="@dimen/OfflineTodayCourse_height"
+            android:background="#4ba3d1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="@dimen/OfflineTodayCourse_height" >
+            <TextView
+                    android:id="@+id/text1023"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/OfflineTodayCourse_height"
+                    android:gravity="center"
+                    android:text="5-6"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+                <TextView
+                    android:id="@+id/text53"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/OfflineTodayCourse_height"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="15dp"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:background="#57bb89" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+                <TextView
+                    android:id="@+id/text1024"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/OfflineTodayCourse_height"
+                    android:gravity="center"
+                    android:text="7-8"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/OfflineTodayCourse_height" >
+
+                <TextView
+                    android:id="@+id/text54"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/OfflineTodayCourse_height"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="15dp"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:background="#d96042" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text1025"
+                    android:layout_width="50dp"
+                    android:layout_height="@dimen/OfflineTodayCourse_height"
+                    android:gravity="center"
+                    android:text="9-10"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/OfflineTodayCourse_height"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text55"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/OfflineTodayCourse_height"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

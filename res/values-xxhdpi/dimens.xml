@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <dimen name="zxqy_TextSize">20.0sp</dimen>
+    <dimen name="bigclass_Item">25.0sp</dimen>
+    <dimen name="bigclass_ItemDetails">18.0sp</dimen>
+    <dimen name="tinyclass_Item">20.0sp</dimen>
+    <dimen name="schoolLife_Browser_Title">24.0sp</dimen>
+    <dimen name="schoolLife_Browser_Time">10.0sp</dimen>
+    <dimen name="zxqy_Browser_Title">20.0sp</dimen>
+    <dimen name="zxqy_Browser_Time">16.0sp</dimen>
+    <dimen name="detail_Title">25.0sp</dimen>
+    <dimen name="detail_Time">18.0sp</dimen>
+    <dimen name="minHeight">55.0dp</dimen>
+    <dimen name="detail_MarginBlank">15.0sp</dimen>
+   
+
+
+    
+     <dimen name="time_mask_width">120.0dip</dimen>
+    <dimen name="time_mask_height">127.0dip</dimen>
+    <dimen name="time_interval">0.0dip</dimen>
+    <dimen name="time_marginBottom">30.0dip</dimen>
+</resources>

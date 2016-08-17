@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 选定帖子的详细及回复列表的布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headlines"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@id/topic_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:focusable="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="19.0sp" />
+
+    <include
+        android:id="@+id/pager_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        layout="@layout/pager_bar" />
+     
+
+   <net.shopnc.android.widget.PullView
+        android:id="@+id/pv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/pager_bar"
+        android:layout_below="@id/topic_title"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:padding="0.0dip" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#ffc9c9c9"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2.0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="true" />
+    </net.shopnc.android.widget.PullView> 
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_ll_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/section1_2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/schedule_1"
+                style="@style/widget_schedule" />
+
+            <TextView
+                android:id="@+id/add_1"
+                style="@style/widget_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/section3_4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/schedule_2"
+                style="@style/widget_schedule" />
+
+            <TextView
+                android:id="@+id/add_2"
+                style="@style/widget_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/section5_6"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/schedule_3"
+                style="@style/widget_schedule" />
+
+            <TextView
+                android:id="@+id/add_3"
+                style="@style/widget_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/section7_8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/schedule_4"
+                style="@style/widget_schedule" />
+
+            <TextView
+                android:id="@+id/add_4"
+                style="@style/widget_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/section9_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/schedule_5"
+                style="@style/widget_schedule" />
+
+            <TextView
+                android:id="@+id/add_5"
+                style="@style/widget_add" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

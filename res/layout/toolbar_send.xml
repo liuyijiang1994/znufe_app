@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发帖工具条 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_send_tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toolbar"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/camera" />
+
+    <ImageView
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:padding="0.0dip"
+        android:src="@drawable/line" />
+
+    <ImageButton
+        android:id="@+id/btn_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/photo" />
+
+    <ImageView
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:padding="0.0dip"
+        android:src="@drawable/line" />
+
+    <ImageButton
+        android:id="@+id/btn_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/face" />
+
+    <ImageView
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:padding="0.0dip"
+        android:src="@drawable/line" />
+
+    <ImageButton
+        android:id="@+id/btn_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/keyboard" />
+
+</LinearLayout>

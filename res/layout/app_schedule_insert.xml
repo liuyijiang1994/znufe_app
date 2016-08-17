@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#ffffff"
+  android:orientation="vertical"
+  
+  >
+
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/title_bar"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <TextView
+                android:text="添加课程"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp" 
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="46dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/checkbox_btn7"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+           
+            </LinearLayout>
+   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+      
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="20dp"
+           android:text="课程名称"
+           android:layout_weight="1"
+           android:textColor="#41cca9"
+           android:textSize="20sp" />
+
+       
+       <EditText
+           android:id="@+id/inputcourse"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:textColor="#9a9999"
+           />
+       
+       </LinearLayout>
+     <com.special.ResideMenuDemo.DashedLine
+           android:id="@+id/dashedLine"
+           android:layout_width="300dp"       
+           android:layout_height="20px" 
+           android:layout_gravity="center"
+           android:background="#ffffff"/>  
+           
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="20dp"
+           android:text="上课地点"
+           android:layout_weight="1"
+           android:textColor="#41cca9"
+           android:textSize="20sp" />
+
+       
+       <EditText
+           android:id="@+id/inputlocation"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="2"
+           android:textSize="20sp"
+           android:layout_marginTop="20dp"
+           android:textColor="#9a9999"
+          />
+       
+       </LinearLayout>
+     <com.special.ResideMenuDemo.DashedLine          
+           android:layout_width="300dp"       
+           android:layout_height="20px" 
+           android:layout_gravity="center"
+           android:background="#ffffff"/> 
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#ffffff"
+          android:orientation="horizontal" >
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="15dp"
+              android:layout_weight="1"
+              android:text="选择周数"
+              android:textColor="#41cca9"
+              android:textSize="20sp" />
+
+          <Spinner
+              android:id="@+id/spinner1"
+              android:layout_width="0dp"
+              android:layout_height="38dip"
+              android:layout_weight="2"
+              android:layout_marginTop="15dp"
+              />
+
+           </LinearLayout>
+            <com.special.ResideMenuDemo.DashedLine          
+           android:layout_width="300dp"       
+           android:layout_height="20px" 
+           android:layout_gravity="center"
+           android:background="#ffffff"/>
+ 
+      <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:orientation="horizontal" >
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="15dp"
+                   android:text="选择节数"
+                   android:textColor="#41cca9"
+                   android:textSize="20sp" 
+                   android:layout_weight="1" />
+
+               <Spinner
+                   android:id="@+id/spinner2"
+                   android:layout_width="0dp"
+                   android:layout_height="38dip"
+                   android:layout_weight="2"
+                   android:layout_marginTop="15dp"
+                   />
+
+           </LinearLayout>
+           
+       <com.special.ResideMenuDemo.DashedLine          
+           android:layout_width="300dp"       
+           android:layout_height="20px" 
+           android:layout_gravity="center"
+           android:background="#ffffff"/> 
+
+       <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:orientation="horizontal" >
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="15dp"
+                   android:text="课时"
+                   android:textColor="#41cca9"
+                   android:textSize="20sp" 
+                   android:layout_weight="1" />
+		    <RadioGroup
+		        android:id="@+id/ataawGroup"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_weight="4"		
+		        android:orientation="horizontal" >
+               <RadioButton
+                   android:id="@+id/radioButton1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:checked="true"
+                   android:button="@drawable/checkbox_btn12" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="2学时"
+                   android:layout_marginBottom="3dp"
+                   android:textColor="#a6a5a5"
+                   android:textSize="12sp" />
+
+	          <RadioButton
+                   android:id="@+id/radioButton2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:button="@drawable/checkbox_btn12" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="3学时"
+                   android:textColor="#a6a5a5"
+                   android:textSize="12sp" />
+             <RadioButton
+                   android:id="@+id/radioButton3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:button="@drawable/checkbox_btn12" />
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="半天"
+                   android:textColor="#a6a5a5"
+                   android:textSize="12sp" />
+               <RadioButton
+                   android:id="@+id/radioButton4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:button="@drawable/checkbox_btn12" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="全天"
+                   android:textColor="#a6a5a5"
+                   android:textSize="12sp" />
+
+            </RadioGroup>   
+
+           </LinearLayout>
+
+     
+
+     <com.special.ResideMenuDemo.DashedLine          
+           android:layout_width="300dp"       
+           android:layout_height="20px" 
+           android:layout_gravity="center"
+           android:background="#ffffff"/> 
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:orientation="horizontal" >
+
+           <Button
+               android:id="@+id/addtime"
+               android:layout_width="28dp"
+               android:layout_height="28dp" 
+               android:layout_marginTop="20dp"  
+               android:layout_marginLeft="10dp"           
+               android:background="@drawable/checkbox_btn8" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="20dp"
+                   android:text="添加时间段"
+                   android:textColor="#41cca9"
+                   android:textSize="20sp" 
+                    />
+              
+           </LinearLayout>
+
+     <com.special.ResideMenuDemo.DashedLine          
+           android:layout_width="300dp"       
+           android:layout_height="20px" 
+           android:layout_gravity="center"
+           android:background="#ffffff"/> 
+</LinearLayout>

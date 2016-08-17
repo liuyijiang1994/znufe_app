@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp" >
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/hour"
+            android:layout_width="89dp"
+            android:layout_height="89dp" />
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/mins"
+            android:layout_width="96dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:text="取消"
+        android:textColor="#60c4aa"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="250dp"
+        android:layout_height="1dip"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="#60c4aa" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentRight="true" >
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="85dp"
+            android:layout_height="27dp"
+            android:layout_alignLeft="@+id/radioButton3"
+            android:layout_below="@+id/radioButton1"
+            android:layout_marginTop="3dp"
+            android:button="@drawable/checkbox_btn9"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="85dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="3dp"
+            android:button="@drawable/checkbox_btn10" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="85dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:button="@drawable/checkbox_btn11"
+           />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/view1"
+        android:background="#ffffff"
+        android:text="确定"
+        android:textColor="#60c4aa"
+        android:textSize="20sp" />
+
+</RelativeLayout>

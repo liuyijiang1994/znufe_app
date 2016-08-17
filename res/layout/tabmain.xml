@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#EEEEEE" >
+        <Button 
+	        android:id="@+id/tab1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/public_twowordsbutton_background_selector"
+	        android:layout_weight="1"
+	        android:textColor="#ffffff"
+	        android:text="校园资讯"
+	        />
+	     <Button 
+	        android:id="@+id/tab2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/public_twowordsbutton_background_selector"
+	        android:layout_weight="1"
+	         android:textColor="#ffffff"
+	        android:text="各类新闻"
+	        />
+	       <Button 
+	        android:id="@+id/tab3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/public_twowordsbutton_background_selector"
+	        android:layout_weight="1"
+	         android:textColor="#ffffff"
+	        android:text="关于我们"
+	        />
+
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:scaleType="matrix"
+        android:src="@drawable/roller"
+         />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_mask_width">110.0dip</dimen>
+    <dimen name="time_mask_height">116.0dip</dimen>
+    <dimen name="time_interval">10.0dip</dimen>
+    <dimen name="time_marginBottom">40.0dip</dimen>
+    <dimen name="Blank">10dp</dimen>
+    <dimen name="Monday_width">65dp</dimen>
+    <dimen name="Tuesday_width">65dp</dimen>
+    <dimen name="Wednesday_width">65dp</dimen>
+    <dimen name="Thursday_width">65dp</dimen>
+    <dimen name="Friday_width">65dp</dimen>
+    <dimen name="Blank1">13dp</dimen>
+    <dimen name="TextView_width">65dp</dimen>
+    <dimen name="LinearLayout_width">65dp</dimen>
+    <dimen name="height1">24dp</dimen>
+    <dimen name="height2">102dp</dimen>
+</resources>
+
+
+
+   
+

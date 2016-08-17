@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:ignore="TextViewEdits,Deprecated" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title_back_confirm" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="22.0dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/text_border"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_loginname"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/txt_loginname"
+            style="@style/MyEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:hint="@string/login_loginname_hint"
+            android:singleLine="true"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="5.0dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/text_border"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_pwd"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/txt_pwd"
+            style="@style/MyEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:hint="@string/login_pwd_hint"
+            android:password="true"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7.0dip" >
+
+        <CheckBox
+            android:id="@+id/cbx_rememberpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25.0dip"
+            android:button="@drawable/checkbox_bg"
+            android:checked="true"
+            android:cursorVisible="true"
+            android:text="@string/login_rememberpwd"
+            android:textColor="@color/checkbox_fg_gray"
+            android:textSize="18.0sp" />
+
+        <CheckBox
+            android:id="@+id/cbx_autologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25.0dip"
+            android:button="@drawable/checkbox_bg"
+            android:checked="true"
+            android:cursorVisible="true"
+            android:text="@string/login_autologin"
+            android:textColor="@color/checkbox_fg_gray"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/reg" />
+
+</LinearLayout>

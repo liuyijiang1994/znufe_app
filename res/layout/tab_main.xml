@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面 -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <!-- tab bar buttons -->
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal"
+            android:paddingTop="2.0dip">
+
+            <RadioButton
+                android:id="@+id/main_tab_home"
+                style="@style/MyTabButton"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_home_btn_bg"
+                android:text="@string/main_home" />
+
+            <RadioButton
+                android:id="@+id/main_tab_live"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tab_live_btn_bg"
+                android:text="@string/main_live" />
+			
+             <RadioButton
+                android:id="@+id/main_tab_info"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tab_info_btn_bg"
+                android:text="@string/main_info" />
+            
+            <RadioButton
+                android:id="@+id/main_tab_forum"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tab_forum_btn_bg"
+                android:text="@string/main_forum" />
+
+
+            <RadioButton
+                android:id="@+id/main_tab_more"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tab_more_btn_bg"
+                android:text="@string/main_more" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

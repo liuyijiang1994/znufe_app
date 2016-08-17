@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip" >
+
+    <TextView
+        android:id="@+id/tv_title_news_top_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+         android:minHeight="@dimen/minHeight"
+        android:textColor="@color/black"
+        android:textSize="@dimen/zxqy_Browser_Title" />
+
+    <TextView
+        android:id="@+id/tv_date_news_top_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:gravity="right"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="@dimen/zxqy_Browser_Time"  />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"   
+    android:background="@drawable/todaycoursebg"
+    >
+     <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#2ea3fe" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#40cca9" >
+
+            <Button
+                android:id="@+id/title_bar_menu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selected_gridicon" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:text="指尖中南"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="36dp"
+                android:layout_height="41dp"
+                android:layout_gravity="right"
+                android:background="@drawable/dl" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#ebebeb" />
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:paddingTop="@dimen/main1_padding" >
+
+         <com.special.ResideMenuDemo.MenuImageView
+             android:id="@+id/library"
+             android:layout_width="@dimen/homePageView_Width"
+             android:layout_height="@dimen/homePageView_Height"
+             android:adjustViewBounds="true"
+             android:scaleType="matrix"
+             android:src="@drawable/kebiaoxianshi" />
+
+         <com.special.ResideMenuDemo.MenuImageView
+             android:id="@+id/setting"
+             android:layout_width="@dimen/homePageView_Width"
+             android:layout_height="@dimen/homePageView_Height"
+             android:layout_alignParentRight="true"
+             android:adjustViewBounds="true"
+             android:scaleType="matrix"
+             android:src="@drawable/xiaoyuanjiejing" />
+     </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:paddingTop="8dp" >
+
+	    <com.special.ResideMenuDemo.MenuImageView
+	        android:id="@+id/schedule"
+	         android:layout_width="@dimen/homePageView_Width"
+		    android:layout_height="@dimen/homePageView_Height"
+	        android:adjustViewBounds="true"
+	        android:scaleType="matrix"
+	        android:src="@drawable/chegnjichaxun" />
+
+	    <com.special.ResideMenuDemo.MenuImageView
+	        android:id="@+id/mysorce"
+	        android:layout_width="@dimen/homePageView_Width"
+		    android:layout_height="@dimen/homePageView_Height"
+	        android:adjustViewBounds="true"
+	        android:scaleType="matrix"
+	        android:src="@drawable/kongjiaoshi" />
+	</LinearLayout>
+    
+ </LinearLayout>
+    

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 选定版块下的帖子列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title_back_confirm" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/main_banner_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_banner"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn_topic_all"
+                    style="@style/MyBannerButton"
+                    android:checked="true"
+                    android:text="@string/topic_all" />
+                
+                 <RadioButton
+                    android:id="@+id/btn_topic_son"
+                    style="@style/MyBannerButton"
+                    android:text="@string/topic_son"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/btn_topic_top"
+                    style="@style/MyBannerButton"
+                    android:text="@string/topic_top" />
+
+                <RadioButton
+                    android:id="@+id/btn_topic_digest"
+                    style="@style/MyBannerButton"
+                    android:text="@string/topic_digest" />
+
+                 <RadioButton
+                    android:id="@+id/btn_topic_search"
+                    style="@style/MyBannerButton"
+                    android:text="@string/topic_search"
+                    android:visibility="gone" /> 
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

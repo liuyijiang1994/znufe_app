@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 带大配图的头条新闻布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headlines"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/listview_bg_gray" >
+
+    <TextView
+        android:id="@+id/topic_id_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:focusable="false"
+        android:text="@string/topic_id"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/topic_img_top"
+        android:layout_width="fill_parent"
+        android:layout_height="255dip"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_big_defalut" />
+
+    <TextView
+        android:id="@+id/topic_title_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/topic_img_top"
+        android:background="@drawable/headlines_first_bg"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingTop="3dip"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white" />
+
+</RelativeLayout>

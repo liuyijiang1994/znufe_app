@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 帖子搜索 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffecedee" >
+
+    <RelativeLayout
+        android:id="@+id/part_search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="12.0dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/text_border" >
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_search" />
+
+        <EditText
+            android:id="@+id/txt_keyword"
+            style="@style/MyEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_search"
+            android:drawSelectorOnTop="false"
+            android:focusable="true"
+            android:hint="@string/topic_search_hint" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/pager_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        layout="@layout/pager_bar" />
+    
+    <!-- content -->
+
+    <net.shopnc.android.widget.PullView
+        android:id="@+id/pv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/part_search_bar"
+        android:layout_above="@id/pager_bar"
+        android:padding="0.0dip" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:cacheColorHint="#ffc9c9c9"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2.0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="true" />
+    </net.shopnc.android.widget.PullView>
+
+</RelativeLayout>

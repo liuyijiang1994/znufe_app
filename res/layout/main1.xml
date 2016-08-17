@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/todaycoursebg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/title_bar"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_right"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/text100"
+                android:layout_width="101dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="课表显示"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/checkbox_btn8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 星期一~星期五 -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/Blank1"
+                    android:layout_height="@dimen/height1"
+                    android:background="#cacfc4" >
+                </LinearLayout>
+
+                <!-- android:layout_marginLeft="1dp" -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/Monday_width"
+                    android:layout_height="@dimen/height1"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="@dimen/Monday_width"
+                        android:layout_height="@dimen/height1"
+                        android:gravity="center"
+                        android:text="星期一"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/Monday_width"
+                    android:layout_height="@dimen/height1"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text26"
+                        android:layout_width="@dimen/Tuesday_width"
+                        android:layout_height="@dimen/height1"
+                        android:gravity="center"
+                        android:text="星期二"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/Monday_width"
+                    android:layout_height="@dimen/height1"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text27"
+                        android:layout_width="@dimen/Wednesday_width"
+                        android:layout_height="@dimen/height1"
+                        android:gravity="center"
+                        android:text="星期三"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/Monday_width"
+                    android:layout_height="@dimen/height1"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text28"
+                        android:layout_width="@dimen/Thursday_width"
+                        android:layout_height="@dimen/height1"
+                        android:gravity="center"
+                        android:text="星期四"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/Monday_width"
+                    android:layout_height="@dimen/height1"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text29"
+                        android:layout_width="@dimen/Friday_width"
+                        android:layout_height="@dimen/height1"
+                        android:gravity="center"
+                        android:text="星期五"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第一节 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/Blank1"
+                    android:layout_height="@dimen/height2"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="@dimen/Blank1"
+                        android:layout_height="@dimen/height2"
+                        android:layout_marginTop="37dp"
+                        android:text="1"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <!-- Here're some bugs -->
+                <!-- 1 -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text0"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 2 -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 3 -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 4 -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 5 -->
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第二节课 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/Blank1"
+                    android:layout_height="@dimen/height2"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="@dimen/Blank1"
+                        android:layout_height="@dimen/height2"
+                        android:layout_marginTop="37dp"
+                        android:text="2"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text9"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第三节课 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/Blank1"
+                    android:layout_height="@dimen/height2"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="@dimen/Blank1"
+                        android:layout_height="@dimen/height2"
+                        android:layout_marginTop="37dp"
+                        android:text="3"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text12"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text13"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text14"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第四节课 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/Blank1"
+                    android:layout_height="@dimen/height2"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="@dimen/Blank1"
+                        android:layout_height="@dimen/height2"
+                        android:layout_marginTop="37dp"
+                        android:text="4"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text15"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text16"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text17"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text18"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text19"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第五节课 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/Blank1"
+                    android:layout_height="@dimen/height2"
+                    android:background="#e4e6e3" >
+
+                    <TextView
+                        android:id="@+id/text25"
+                        android:layout_width="@dimen/Blank1"
+                        android:layout_height="@dimen/height2"
+                        android:layout_marginTop="37dp"
+                        android:text="5"
+                        android:textColor="#cacfc4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text20"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text21"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text22"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text23"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/LinearLayout_width"
+                    android:layout_height="@dimen/height2"
+                    android:layout_marginLeft="1dp" >
+
+                    <TextView
+                        android:id="@+id/text24"
+                        android:layout_width="@dimen/TextView_width"
+                        android:layout_height="@dimen/height2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

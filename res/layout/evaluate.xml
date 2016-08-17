@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" 
+    android:id="@+id/evaluate">
+
+	<TextView
+	    android:id="@+id/success"
+	    android:layout_width="match_parent"
+	    android:layout_height="30dip"
+	    android:background="#41cca9"
+	    android:gravity="center"
+	    android:text="@string/_"
+	    android:textColor="#FFFFFF" />
+	
+ <ListView
+     android:id="@+id/evaluteListView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/success"
+
+     android:divider="#43CD80" 
+     android:dividerHeight="2.0dip" >
+
+</ListView>
+
+ <Button
+     android:id="@+id/btn"
+     android:layout_width="52dp"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/success"
+     android:layout_alignParentLeft="true"
+     android:background="@drawable/title_btn_right"
+     android:textColor="#ffffff"
+     android:textSize="10dp" />
+
+</RelativeLayout>

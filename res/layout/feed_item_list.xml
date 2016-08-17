@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+	<RelativeLayout 
+	    android:background="@drawable/shap_title_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<ImageButton
+		    android:layout_alignParentLeft="true"
+		    android:id="@+id/fil_back_btn"
+		    style="@style/img_btn_style"
+		    android:src="@drawable/btn_back" 
+			/>
+		<TextView
+		    android:id="@+id/fil_feed_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:textSize="20sp"
+		    android:textColor="@color/white"
+		    android:text="@string/app_name" />
+	</RelativeLayout>
+
+	<com.dreamteam.custom.ui.PullToRefreshListView
+	    android:id="@+id/fil_lv_feed_item"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="@color/transparent"
+	    android:dividerHeight="10dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="10dp" />
+
+</LinearLayout>

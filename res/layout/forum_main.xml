@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 选定版块子列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+    
+    	<include
+        android:id="@+id/pager_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        layout="@layout/pager_bar"
+         />
+
+    <!-- 帖子列表 -->
+
+    <net.shopnc.android.widget.PullView
+        android:id="@+id/pv2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0.0dip" 
+        android:layout_above="@id/pager_bar">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#ffc9c9c9"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2.0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="true" />
+    </net.shopnc.android.widget.PullView>
+
+</RelativeLayout>

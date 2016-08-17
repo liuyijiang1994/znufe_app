@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 版块列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <net.shopnc.android.widget.PullView
+        android:id="@+id/pv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0.0dip" > 
+
+        <ExpandableListView
+            android:id="@+id/lv_boards"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#ffc9c9c9"
+            android:childDivider="@drawable/divider"
+            android:childIndicator="@null"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/divider"
+            android:dividerHeight="2.0dip"
+            android:fadingEdge="none"
+            android:groupIndicator="@null" />
+    </net.shopnc.android.widget.PullView> 
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一级栏目"论坛" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title_refresh_logo_exit" />
+
+    <!-- tabhost -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/main_banner_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_banner"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn_home_headlines"
+                    style="@style/MyBannerButton"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:text="@string/home_headlines" />
+
+                <RadioButton
+                    android:id="@+id/btn_home_teahouse"
+                    style="@style/MyBannerButton"
+                    android:focusable="false"
+                    android:text="@string/home_teahouse" />
+
+                <RadioButton
+                    android:id="@+id/btn_home_focus"
+                    style="@style/MyBannerButton"
+                    android:focusable="false"
+                    android:text="@string/home_focus" />
+
+                <RadioButton
+                    android:id="@+id/btn_home_entertainment"
+                    style="@style/MyBannerButton"
+                    android:focusable="false"
+                    android:text="@string/home_entertainment" />
+
+                <RadioButton
+                    android:id="@+id/btn_home_emotional"
+                    style="@style/MyBannerButton"
+                    android:focusable="false"
+                    android:text="@string/home_emotional" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

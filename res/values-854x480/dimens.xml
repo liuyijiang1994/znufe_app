@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 字体（字体不用改） --> 
+    <dimen name="zxqy_TextSize">15.0sp</dimen>
+    <dimen name="bigclass_Item">18.0sp</dimen>
+    <dimen name="bigclass_ItemDetails">13.0sp</dimen>
+    <dimen name="tinyclass_Item">15.0sp</dimen>
+    <dimen name="schoolLife_Browser_Title">15.0sp</dimen>
+    <dimen name="schoolLife_Browser_Time">12.0sp</dimen>
+    <dimen name="zxqy_Browser_Title">15.0sp</dimen>
+    <dimen name="zxqy_Browser_Time">12.0sp</dimen>
+    
+    
+    
+    <!-- layout_news_top_item.xml（没问题） -->
+    <dimen name="minHeight">55.0dp</dimen>
+    
+    
+   <!-- news_detail.xml文件中 -->
+    <dimen name="detail_MarginBlank">15.0sp</dimen>
+    <dimen name="detail_Title">17.0sp</dimen>
+    <dimen name="detail_Time">15.0sp</dimen>
+    
+    
+    <!-- pulldownnews.xml文件中 -->
+    <dimen name="titleBar">22.0sp</dimen>
+    
+    
+    <!-- widget_4x2.xml文件中 （沿用之前版本，应该没问题）-->
+    <dimen name="time_mask_width">135.0dip</dimen>
+    <dimen name="time_mask_height">140.0dip</dimen>
+    <dimen name="time_interval">10.0dip</dimen>
+    <dimen name="time_marginBottom">35.0dip</dimen>
+    
+    <!-- 来源未知 （沿用之前版本，应该没问题）-->
+    <dimen name="Blank">10dp</dimen>
+
+    
+    <!-- main1.xml文件中（沿用之前版本，没问题） -->
+    <dimen name="Blank1">12dp</dimen>
+    <dimen name="height1">21dp</dimen>   
+    <dimen name="Monday_width">61dp</dimen>
+     <dimen name="height2">98dp</dimen>
+    <dimen name="Tuesday_width">61dp</dimen>
+    <dimen name="Wednesday_width">61dp</dimen>
+    <dimen name="Thursday_width">61dp</dimen>
+    <dimen name="Friday_width">61dp</dimen> 
+    <dimen name="TextView_width">61dp</dimen>
+    <dimen name="LinearLayout_width">61dp</dimen>
+    
+   <!-- select_section（沿用之前版本，没问题） -->
+    <dimen name="OK_height">120.0dp</dimen>
+    <dimen name="OK_width">195.0dp</dimen>
+    <dimen name="OK_CheckBox1_layout_marginBottom">18.0dp</dimen>
+    <dimen name="OK_CheckBox1_layout_marginLeft">32.0dp</dimen>
+    <dimen name="OK_CheckBox2_layout_marginLeft">35.0dp</dimen>
+    <dimen name="OK_CheckBox3_layout_marginBottom">22.0dp</dimen>
+    <dimen name="OK_CheckBox3_layout_marginRight">14.0dp</dimen>
+    <dimen name="OK_CheckBox5_layout_marginBottom">16.0dp</dimen>
+    <dimen name="OK_CheckBox5_layout_marginRight">26.0dp</dimen>
+    
+    <!-- 来源未知（没问题） -->
+    <dimen name="OfflineTodayCourse_height">93.0dp</dimen>
+    
+    <!-- 主界面的4个框的宽和高 -->
+    <dimen name="homePageView_Width">150dp</dimen>
+    <dimen name="homePageView_Height">210dp</dimen>
+    
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title_back_confirm" />
+
+    <TextView
+        android:id="@+id/txt_type_flow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:focusable="false"
+        android:text="@string/more_sysset_type_flow"
+        android:textColor="#ff666666"
+        android:textSize="14.0sp" />
+
+    <ListView
+        android:id="@+id/lv_flow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_type_flow"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+
+    <View
+        android:id="@+id/split"
+        style="@style/MyLabelSplit"
+        android:layout_height="8dip"
+        android:layout_below="@id/lv_flow" />
+
+    <TextView
+        android:id="@+id/txt_type_cache"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/split"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:focusable="false"
+        android:text="@string/more_sysset_type_cache"
+        android:textColor="#ff666666"
+        android:textSize="14.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/clear_cache"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_type_cache"
+        android:background="@drawable/list_item_single"
+        android:maxHeight="50dip"
+        android:maxWidth="50dip" >
+
+        <TextView
+            android:id="@+id/txt_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="27.0dip"
+            android:gravity="left|center"
+            android:paddingBottom="13.0dip"
+            android:paddingTop="13.0dip"
+            android:text="@string/more_sysset_clear_cache"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/txt_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="27.0dip"
+            android:gravity="left|center"
+            android:textColor="#ff666666"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/split2"
+        style="@style/MyLabelSplit"
+        android:layout_below="@id/clear_cache" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/split2"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="@string/more_sysset_default" />
+
+</RelativeLayout>
